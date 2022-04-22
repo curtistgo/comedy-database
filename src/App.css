@@ -72,3 +72,9 @@
   padding: 10px 10px;
   margin-top: 15px;
 }
+
+/* Paragraph page */
+
+.paraFormat {
+  text-align: left;
+}

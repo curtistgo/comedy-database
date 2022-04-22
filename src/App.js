@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import MessageList from "./components/MessageList";
 import MessageForm from "./components/MessageForm";
+import Paragraph from "./components/Paragraph";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -26,6 +27,10 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <h1 className="the-head">Comedy Screenplays</h1>
+        <div>
+          <Paragraph />
+        </div>
+
         <div class="info-block container-fluid">
           <div>
             <MessageForm loadState={this.loadState} />
