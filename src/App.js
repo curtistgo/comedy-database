@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import MessageList from "./components/MessageList";
+import MessageForm from "./components/MessageForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.loadState = this.loadState.bind(this);
+    this.state = { messages: [], error: null };
+  }
+  loadState() {
+    fetch("https://wtnret-5002.sse.codesandbox.io/messages")
+      .then((data) => data.json())
+      .then((messages) => {
+        this.setState({ messages: messages, error: null });
+      })
+      .catch((error) => {
+        this.setState({ message: [], error: "Error loading message." });
+      });
+  }
+  componentDidMount() {
+    this.loadState();
+  }
+  render() {
+    return (
+      <div className="App">
+        <h1 className="the-head">Comedy Screenplays</h1>
+        <div class="info-block container-fluid">
+          <div>
+            <MessageForm loadState={this.loadState} />
+          </div>
+
+          <div id="messages">
+            <MessageList messages={this.state.messages} />
+            <p>{this.state.error ?? " "}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default App;

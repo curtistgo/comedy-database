@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.the-head {
+  background-color: rgb(153, 38, 0);
+  padding-bottom: 15px;
+  color: rgb(255, 255, 204);
+}
+
+.info-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(../../images/charlie-chaplin.jpg);
+  background-size: cover;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.fields {
+  width: 350px;
+}
+
+.field-label {
+  font-family: ubuntu;
+  font-size: large;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0px 8px;
+}
+
+#messages {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "verdana";
+  padding: 10px 10px;
+  margin-top: 15px;
+}
