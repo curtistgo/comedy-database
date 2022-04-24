@@ -15,9 +15,9 @@ export default class Paragraph extends React.Component {
 
           <p>
             Comedic movies deserve equal respect as dramatic movies. After all,
-            comedy has transformative powers. It has been known to transform
-            people with miserable moods into lighter more affable people. Comedy
-            is happiness.
+            comedy has transformative powers. Comedies have been known to
+            transform people in miserable moods into lighter more affable
+            people. Comedy is happiness.
           </p>
         </div>
       </html>

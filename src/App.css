@@ -93,4 +93,7 @@
 .db-text {
   text-align: left;
   font-family: ubuntu;
+  padding: 12px;
+  font-weight: 400;
+  font-size: large;
 }
