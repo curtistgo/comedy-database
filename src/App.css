@@ -76,5 +76,21 @@
 /* Paragraph page */
 
 .paraFormat {
+  font-family: ubuntu;
+  font-weight: 500;
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: -10px;
+  margin-bottom: -15px;
+}
+
+/* MessageList */
+
+.db-text {
+  text-align: left;
+  font-family: ubuntu;
 }

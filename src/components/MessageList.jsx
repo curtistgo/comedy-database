@@ -10,9 +10,9 @@ export default class MessageList extends React.Component {
         <td>
           <strong>{dateTime}</strong>
         </td>
-        <td>{message.title}</td>
-        <td>{message.writer}</td>
-        <td>{message.synopsis}</td>
+        <td className="db-text">{message.title}</td>
+        <td className="db-text">{message.writer}</td>
+        <td className="db-text">{message.synopsis}</td>
       </tr>
     );
   }

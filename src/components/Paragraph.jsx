@@ -4,7 +4,7 @@ export default class Paragraph extends React.Component {
   render() {
     return (
       <html>
-        <div className="container paraFormat">
+        <div className="container-fluid paraFormat">
           <p>Hi Folks!</p>
 
           <p>
