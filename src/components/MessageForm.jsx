@@ -49,6 +49,7 @@ export default class MessageForm extends React.Component {
             name="title"
             placeholder="Title"
             maxLength="48"
+            required
           />
         </div>
 
@@ -64,6 +65,7 @@ export default class MessageForm extends React.Component {
             name="writer"
             placeholder="Writer"
             maxLength="125"
+            required
           />
         </div>
 
@@ -80,6 +82,7 @@ export default class MessageForm extends React.Component {
             maxLength="500"
             name="synopsis"
             placeholder="What's the movie about?"
+            required
           ></textarea>
         </div>
         <button class="field-label" type="submit">
