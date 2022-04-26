@@ -46,6 +46,7 @@ export default class MessageForm extends React.Component {
           <input
             className="fields"
             type="text"
+            id="title"
             name="title"
             placeholder="Title"
             maxLength="48"
@@ -62,6 +63,7 @@ export default class MessageForm extends React.Component {
           <input
             className="fields"
             type="text"
+            id="writer"
             name="writer"
             placeholder="Writer"
             maxLength="125"
@@ -78,6 +80,7 @@ export default class MessageForm extends React.Component {
           <textarea
             className="fields"
             type="text"
+            id="synopsis"
             rows="4"
             maxLength="500"
             name="synopsis"
