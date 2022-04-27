@@ -88,7 +88,7 @@ export default class MessageForm extends React.Component {
             required
           ></textarea>
         </div>
-        <button class="field-label" type="submit">
+        <button class="field-label submit-btn" type="submit">
           Submit
         </button>
       </form>
