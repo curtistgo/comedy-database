@@ -22,13 +22,18 @@
 
 /* MessageForm Component */
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
 .fields {
-  width: 350px;
+  /* width: 3500px; */
   padding: 5px 10px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px;
   margin-top: 5px;
   margin-bottom: 15px;
+  flex-grow: 5;
 }
 
 .field-label {
@@ -71,6 +76,7 @@ button:hover {
   font-family: "verdana";
   padding: 10px 10px;
   margin-top: 15px;
+  overflow: scroll;
 }
 
 /* Paragraph page */

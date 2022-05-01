@@ -11,7 +11,7 @@ export default class App extends React.Component {
     this.state = { messages: [], error: null };
   }
   loadState() {
-    fetch("https://wtnret-5007.sse.codesandbox.io/messages")
+    fetch("https://wtnret-5002.sse.codesandbox.io/messages")
       .then((data) => data.json())
       .then((messages) => {
         this.setState({ messages: messages, error: null });
@@ -31,7 +31,7 @@ export default class App extends React.Component {
           <Paragraph />
         </div>
 
-        <div class="info-block container-fluid">
+        <div className="info-block container-fluid">
           <div>
             <MessageForm loadState={this.loadState} />
           </div>

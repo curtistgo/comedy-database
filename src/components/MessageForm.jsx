@@ -11,7 +11,7 @@ export default class MessageForm extends React.Component {
     document.querySelector("[name=writer]").value = "";
     document.querySelector("[name=synopsis]").value = "";
 
-    fetch("https://wtnret-5007.sse.codesandbox.io/messages/new", {
+    fetch("https://wtnret-5002.sse.codesandbox.io/messages/new", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -33,7 +33,8 @@ export default class MessageForm extends React.Component {
   render() {
     return (
       <form
-        action="https://wtnret-5007.sse.codesandbox.io/messages/new"
+        className="form-container"
+        action="https://wtnret-5002.sse.codesandbox.io/messages/new"
         method="POST"
         onSubmit={(e) => this.handleSubmit(e)}
       >
@@ -51,6 +52,7 @@ export default class MessageForm extends React.Component {
             placeholder="Title"
             maxLength="48"
             required
+            autoFocus
           />
         </div>
 
@@ -88,7 +90,7 @@ export default class MessageForm extends React.Component {
             required
           ></textarea>
         </div>
-        <button class="field-label submit-btn" type="submit">
+        <button className="field-label submit-btn" type="submit">
           Submit
         </button>
       </form>
