@@ -33,13 +33,12 @@ export default class MessageForm extends React.Component {
   render() {
     return (
       <form
-        className="form-container"
         action="https://wtnret-5002.sse.codesandbox.io/messages/new"
         method="POST"
         onSubmit={(e) => this.handleSubmit(e)}
       >
         <div>
-          <label class="field-label" for="title">
+          <label className="field-label" for="title">
             Title
           </label>
         </div>
@@ -57,7 +56,7 @@ export default class MessageForm extends React.Component {
         </div>
 
         <div>
-          <label class="field-label" for="writer">
+          <label className="field-label" for="writer">
             Writer
           </label>
         </div>
@@ -74,7 +73,7 @@ export default class MessageForm extends React.Component {
         </div>
 
         <div>
-          <label class="field-label" for="synopsis">
+          <label className="field-label" for="synopsis">
             Synopsis
           </label>
         </div>
@@ -90,6 +89,7 @@ export default class MessageForm extends React.Component {
             required
           ></textarea>
         </div>
+
         <button className="field-label submit-btn" type="submit">
           Submit
         </button>

@@ -21,19 +21,13 @@
 }
 
 /* MessageForm Component */
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-}
 .fields {
-  /* width: 3500px; */
   padding: 5px 10px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  flex-grow: 5;
+  width: 100%;
 }
 
 .field-label {
@@ -87,9 +81,14 @@ button:hover {
   text-align: left;
   background-color: rgba(100, 100, 100, 0.2);
   background-size: cover;
-  padding-left: 30px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 178px) {
+  .paraFormat {
+    font-size: 14px;
+  }
 }
 
 /* MessageList */
