@@ -13,7 +13,7 @@ code {
 }
 
 .headinfo {
-  background-image: url(../../images/movie-theater-curtain-light.jpg);
+  background-image: url(../images/movie-theater-curtain-light.jpg);
   height: 200px;
   background-size: cover;
   overflow: hidden;
