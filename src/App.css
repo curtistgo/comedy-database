@@ -13,7 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-image: url(../../images/charlie-chaplin.jpg);
+  background-image: url(../images/charlie-chaplin.jpg);
   background-size: cover;
   padding-bottom: 20px;
   padding-top: 20px;
