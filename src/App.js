@@ -11,7 +11,7 @@ export default class App extends React.Component {
     this.state = { messages: [], error: null };
   }
   loadState() {
-    fetch("https://wtnret-5002.sse.codesandbox.io/messages")
+    fetch("https://wtnret-5004.sse.codesandbox.io/messages")
       .then((data) => data.json())
       .then((messages) => {
         this.setState({ messages: messages, error: null });

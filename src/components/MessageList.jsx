@@ -18,6 +18,10 @@ export default class MessageList extends React.Component {
   }
   render() {
     let messagesJsx = this.props.messages.map(this.transformMessage);
-    return <ul>{messagesJsx}</ul>;
+    return (
+      <table>
+        <tbody>{messagesJsx}</tbody>
+      </table>
+    );
   }
 }

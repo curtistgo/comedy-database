@@ -11,7 +11,7 @@ export default class MessageForm extends React.Component {
     document.querySelector("[name=writer]").value = "";
     document.querySelector("[name=synopsis]").value = "";
 
-    fetch("https://wtnret-5002.sse.codesandbox.io/messages/new", {
+    fetch("https://wtnret-5004.sse.codesandbox.io/messages/new", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -33,12 +33,12 @@ export default class MessageForm extends React.Component {
   render() {
     return (
       <form
-        action="https://wtnret-5002.sse.codesandbox.io/messages/new"
+        action="https://wtnret-5004.sse.codesandbox.io/messages/new"
         method="POST"
         onSubmit={(e) => this.handleSubmit(e)}
       >
         <div>
-          <label className="field-label" for="title">
+          <label className="field-label" htmlFor="title">
             Title
           </label>
         </div>
@@ -56,7 +56,7 @@ export default class MessageForm extends React.Component {
         </div>
 
         <div>
-          <label className="field-label" for="writer">
+          <label className="field-label" htmlFor="writer">
             Writer
           </label>
         </div>
@@ -73,7 +73,7 @@ export default class MessageForm extends React.Component {
         </div>
 
         <div>
-          <label className="field-label" for="synopsis">
+          <label className="field-label" htmlFor="synopsis">
             Synopsis
           </label>
         </div>
