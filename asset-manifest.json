@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/comedy-database/static/css/main.4223f20b.css",
-    "main.js": "/comedy-database/static/js/main.4a27ed5a.js",
+    "main.js": "/comedy-database/static/js/main.84b25032.js",
     "static/media/movie-theater-curtain-light.jpg": "/comedy-database/static/media/movie-theater-curtain-light.148a5766c0ce52a6e130.jpg",
     "static/media/charlie-chaplin.jpg": "/comedy-database/static/media/charlie-chaplin.230763543c09fafce60e.jpg",
     "index.html": "/comedy-database/index.html",
     "main.4223f20b.css.map": "/comedy-database/static/css/main.4223f20b.css.map",
-    "main.4a27ed5a.js.map": "/comedy-database/static/js/main.4a27ed5a.js.map"
+    "main.84b25032.js.map": "/comedy-database/static/js/main.84b25032.js.map"
   },
   "entrypoints": [
     "static/css/main.4223f20b.css",
-    "static/js/main.4a27ed5a.js"
+    "static/js/main.84b25032.js"
   ]
 }
